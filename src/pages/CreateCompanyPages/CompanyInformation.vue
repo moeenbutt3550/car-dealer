@@ -33,6 +33,7 @@
                 <div class="row q-col-gutter-md">
                   <div class="col-6">
                     <q-input outlined v-model="text" label="Label (stacked)" stack-label :dense="dense" />
+                    looop used
                   </div>
                 </div>
               </div>
