@@ -142,6 +142,7 @@
                   padding="6px 8px"
                   icon-right="arrow_forward"
                   label="Next Step"
+                  to="/createcompanyuser"
                 />
                 <q-btn
                   class="bg-light-grey float-right"
