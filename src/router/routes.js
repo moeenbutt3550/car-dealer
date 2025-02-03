@@ -5,6 +5,7 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/IndexPage.vue') },
       { path: 'showroominformation', component: () => import('pages/ShowroomManagement/ShowroomInformation.vue') },
+      { path: 'companyProfile', component: () => import('pages/CreateCompanyPages/CompanyProfile.vue') },
       { path: 'companyinformation', component: () => import('pages/CreateCompanyPages/CompanyInformation.vue') },
       { path: 'createcompanyuser', component: () => import('pages/CreateCompanyPages/CreateCompanyUser.vue') },
       { path: 'paymentpackage', component: () => import('pages/CreateCompanyPages/PaymentPackage.vue') },

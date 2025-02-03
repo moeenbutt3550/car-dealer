@@ -18,16 +18,16 @@
                 flat
                 dense
                 class="bg-primary text-white"
-                size="24px"
+                size="18px"
                 icon="light_mode"
                 aria-label="Notifications"
                 @click="toggleNotifications"
               />
-              <q-btn flat dense size="24px" icon="dark_mode" />
+              <q-btn flat dense size="18px" icon="dark_mode" />
             </div>
           </div>
         </q-toolbar-title>
-        <q-btn class="text-grey-8 bg-white round-10 font-20 font-w-400" padding="6px 12px" label="AED">
+        <q-btn class="text-grey-8 bg-white round-10 font-18 font-w-400" padding="6px 12px" label="AED">
           <q-icon name="arrow_drop_down" />
 
           <q-menu>
@@ -59,7 +59,7 @@
           </q-list> -->
           </q-menu>
         </q-btn>
-        <q-btn flat dense size="24px" icon="notifications" />
+        <q-btn flat dense size="18px" icon="notifications" />
         <q-item clickable v-ripple class="text-secondary">
         <q-item-section v-if="$q.screen.xs ? '' : 'hidden'"><div class="font-w-500">Ibrahim Ahmad</div> <div class="font-w-400 text-accent">Al Tayer Motors UAE</div> </q-item-section>
         <q-item-section avatar>
@@ -114,7 +114,7 @@
           Select Showroom
         </div>
         <q-item-section>
-          <q-select outlined bottom-slots v-model="selectedOption" class="custom-select"  :options="options" dropdown-icon="keyboard_arrow_down" :dense="dense" :options-dense="denseOpts">
+          <q-select outlined bottom-slots v-model="selectedOption" class="custom-select" :options="options" dropdown-icon="keyboard_arrow_down" :dense="dense" :options-dense="denseOpts">
         <template v-slot:prepend>
           <q-icon name="img:icons/company.svg"/>
         </template>
@@ -291,9 +291,7 @@ export default defineComponent({
   font-size: 32px !important;
 }
 ::v-deep(.q-select__dropdown-icon){font-size: 32px !important; color: white;}
-::v-deep(.q-field__native,) {
-  color: white !important; /* Change text color */
-}
+
 .radius-right {
   border-radius: 0px 28px 28px 0px !important;
 }
