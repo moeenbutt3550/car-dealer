@@ -23,43 +23,44 @@
           </q-item>
 
           <q-separator />
-          <div class="q-py-md" :class="$q.screen.sm ? 'q-px-xl' : ''">
+          <div class="q-py-md" :class="$q.screen.gt.md ? 'q-px-xl' : 'q-px-md'">
             <div
-              class="row justify-center q-px-xl q-py-xl"
-            >
-            <div class="col-7">
+              class="row justify-center q-py-xl"
+            :class="$q.screen.gt.md ? 'q-px-xl' :'q-px-sm'"
+              >
+            <div class="col-12 col-md-10 col-lg-10 col-xl-7">
               <div class="row q-col-gutter-lg">
-                <div class="col-6">
+                <div class="col-12 col-sm-6 ">
                   <div class="">
                   <p>E-mail Address</p>
                   <q-input filled class="bg-light-sky radius" v-model="text" label="Email" />
                 </div>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                   <div class="">
                   <p>User Role </p>
                   <q-input filled class="bg-light-sky radius" v-model="text" label="User Role" />
                 </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                   <div class="">
                   <p>User Name</p>
                   <q-input filled class="bg-light-sky radius" v-model="text" label="User Name" />
                 </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                   <div class="">
                   <p>Password</p>
                   <q-input filled class="bg-light-sky radius" v-model="text" label="Password" />
                 </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-sm-4">
                   <div class="">
                   <p>User Limit</p>
                   <q-input filled class="bg-light-sky radius" v-model="text" label="User Limit" />
                 </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                   <p class="font-18 font-w-400">Hr Department</p>
                   <div class="row radius bg-light-sky q-px-sm q-py-md">
                     <div class="col-12">
@@ -76,7 +77,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                   <p class="font-18 font-w-400">Sale Department</p>
                   <div class="row radius bg-light-sky q-px-sm q-py-md">
                     <div class="col-12">
@@ -93,7 +94,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                   <p class="font-18 font-w-400">Account Department</p>
                   <div class="row radius bg-light-sky q-px-sm q-py-md">
                     <div class="col-12">
@@ -110,7 +111,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                   <p class="font-18 font-w-400">IT Department</p>
                   <div class="row radius bg-light-sky q-px-sm q-py-md">
                     <div class="col-12">
@@ -127,7 +128,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                   <p class="font-18 font-w-400">Marketing Department</p>
                   <div class="row radius bg-light-sky q-px-sm q-py-md">
                     <div class="col-12">
@@ -144,7 +145,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                   <p class="font-18 font-w-400">Loan Department</p>
                   <div class="row radius bg-light-sky q-px-sm q-py-md">
                     <div class="col-12">
@@ -161,7 +162,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                   <p class="font-18 font-w-400">IT Department</p>
                   <div class="row radius bg-light-sky q-px-sm q-py-md">
                     <div class="col-12">
@@ -178,7 +179,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                   <p class="font-18 font-w-400">Marketing Department</p>
                   <div class="row radius bg-light-sky q-px-sm q-py-md">
                     <div class="col-12">
@@ -195,7 +196,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6 col-lg-4">
                   <p class="font-18 font-w-400">Loan Department</p>
                   <div class="row radius bg-light-sky q-px-sm q-py-md">
                     <div class="col-12">
