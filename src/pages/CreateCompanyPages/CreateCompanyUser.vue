@@ -276,4 +276,10 @@ p {
 :deep(.q-checkbox__svg) {
   padding: 2px !important;
 }
+:deep(.q-field__native, .q-field__prefix, .q-field__suffix, .q-field__input) {
+  text-align: center;
+}
+:deep(.q-field--filled .q-field__control) {
+  background-color: #ebf1f4 !important;
+}
 </style>
