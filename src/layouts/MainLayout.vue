@@ -290,7 +290,7 @@ export default defineComponent({
 ::v-deep(.q-expansion-item__toggle-icon) {
   font-size: 32px !important;
 }
-::v-deep(.q-select__dropdown-icon){font-size: 32px !important; color: white;}
+:deep(.custom-select  .q-select__dropdown-icon){font-size: 32px !important; color: white;}
 
 .radius-right {
   border-radius: 0px 28px 28px 0px !important;
