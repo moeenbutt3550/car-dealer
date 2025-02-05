@@ -12,11 +12,13 @@
             <q-item-section>
               <div>
                 <q-btn
-                  class="float-right font-16"
+                  class="float-right q-ml-md"
                   no-caps
                   color="primary"
-                  padding="4px 20px"
-                  label="Update"
+                  padding="6px 8px"
+                  icon-right="arrow_forward"
+                  label="Next Step"
+                  to="/paymentpackage"
                 />
               </div>
             </q-item-section>
@@ -216,16 +218,25 @@
               </div>
               <div class="col-12 q-mt-lg">
                 <q-btn
+                  class="font-16 q-px-lg"
+                  :class="$q.screen.xs ? 'full-width' : ''"
+                  no-caps
+                  label="Back"
+                  to="/companyprofile"
+                />
+                <q-btn
                   class="float-right q-ml-md"
+                  :class="$q.screen.xs ? 'full-width q-my-md' : ''"
                   no-caps
                   color="primary"
                   padding="6px 8px"
                   icon-right="arrow_forward"
                   label="Next Step"
-                  to="/createcompanyuser"
+                  to="/paymentpackage"
                 />
                 <q-btn
                   class="bg-light-grey float-right"
+                  :class="$q.screen.xs ? 'full-width' : ''"
                   no-caps
                   padding="6px 20px"
                   label="Cancel"
@@ -245,7 +256,7 @@
 export default {
   data() {
     return {
-
+      val: false,
     }
   },
 }
@@ -256,5 +267,13 @@ p {
 }
 .radius {
   border-radius: 6px !important;
+}
+:deep(.q-checkbox__bg) {
+    border: 1px solid currentColor !important;
+    border-radius: 4px !important;
+
+}
+:deep(.q-checkbox__svg) {
+  padding: 2px !important;
 }
 </style>
