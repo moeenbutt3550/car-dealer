@@ -13,6 +13,16 @@ const routes = [
 
     ]
   },
+  {
+    path: '/auth',
+    component: () => import('layouts/AuthLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/AuthPages/LoginPage.vue') },
+      { path: 'forgetpassword', component: () => import('pages/AuthPages/ForgetPassword.vue') },
+      { path: 'resetpassword', component: () => import('pages/AuthPages/UpdatePassword.vue') },
+    ]
+  },
+
 
   // Always leave this as last one,
   // but you can also remove it

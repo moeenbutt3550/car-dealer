@@ -15,6 +15,14 @@
             </div>
             <div class="col-12 col-md-6 col-lg-8 text-right">
               <q-btn
+          class="q-mr-xs"
+          flat
+          size="18px"
+          round
+          @click="$q.dark.toggle()"
+          :icon="$q.dark.isActive ? 'nights_stay' : 'wb_sunny'"
+        />
+              <!-- <q-btn
                 flat
                 dense
                 class="bg-primary text-white"
@@ -23,7 +31,7 @@
                 aria-label="Notifications"
                 @click="toggleNotifications"
               />
-              <q-btn flat dense size="18px" icon="dark_mode" />
+              <q-btn flat dense size="18px" icon="dark_mode" /> -->
             </div>
           </div>
         </q-toolbar-title>
